@@ -16,7 +16,7 @@ bool again();
 //An employee is then derived from a person plus more (an hourly rate and
 //the number of hours worked)
 
-class employee		//Modify this line to add a derivation list
+class employee:public person	//5c. Modify this line to add a derivation list 
 {
       public:
              employee();
@@ -31,7 +31,8 @@ class employee		//Modify this line to add a derivation list
              bool quit();
              bool fired(char * documentation);  
              void display() const;        
-             //What else should we be able to do with an employee?
+             //What else should we be able to do with an employee?()
+
 
       protected:   
               int employee_id;

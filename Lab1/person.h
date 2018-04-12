@@ -60,7 +60,7 @@ class name
 //this way because the name functionality is used much more frequently than the
 //address for this particular implementation of a person. 
 
-class person			//Modify this to have a derivation list
+class person: public name		//5a. Modify this to have a derivation list (Done)
 {
       public:
              person();
@@ -71,7 +71,9 @@ class person			//Modify this to have a derivation list
              bool find_by_zip(const char * zip_to_compare) const;
              void read();
              void display() const;
-             //Add a wrapper function to change the address 
+             // 5b. Add a wrapper function to change the address (Done)
+             void change_address(char * street, char * zip);
+
 
 
       protected:
