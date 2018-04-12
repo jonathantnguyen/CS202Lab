@@ -8,6 +8,9 @@ employee::employee(char * name, char * street, char * zip, int id)
 	//Avoid accessing the base class members here.
         //Instead, use an initialization list to cause the
         //base class constructor to be called with the name
+	person(name,street,zip), 
+	employee_id(id), 
+	root(0){}
 
 
 }
@@ -18,7 +21,7 @@ employee::employee(char * name, char * street, char * zip, int id)
 //Think about how to use the member functions inherited to
 //initialize the new hourly employee.
 //Avoid use of the = operator as it does a shallow copy!
-hourly_employee::hourly_employee(const person & input)
+hourly_employee::hourly_employee(const person & input):employee(input){}
 {
 
 }
