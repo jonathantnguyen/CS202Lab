@@ -2,7 +2,7 @@
 
 //Place the implementation of the constructors here for the person.h
 //Step 6a. (Done)
-address::address():street(0),zip(0){}
+address::address():street(0),zip(0)
  {  
       	//Place your code here
  		//street = zip = NULL;
